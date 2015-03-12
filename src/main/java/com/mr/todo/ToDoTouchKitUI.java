@@ -44,7 +44,7 @@ public class ToDoTouchKitUI extends UI {
         final TabBarView tabBarView = new TabBarView();
         final NavigationManager navigationManager = new NavigationManager();
         navigationManager.setCaption("Tab 1");
-//        navigationManager.setCurrentComponent(new MenuView());
+        navigationManager.setCurrentComponent(new TodoView());
 
         Tab tab;
         tab = tabBarView.addTab(navigationManager);
@@ -65,4 +65,3 @@ public class ToDoTouchKitUI extends UI {
         offlineMode.setOfflineModeTimeout(15);
     }
 }
-
